@@ -11,7 +11,7 @@ Please use the [issue tracker](https://github.com/pyronome/pattern-laravel-6x/is
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [pattern overview page](https://pyronome.com/pyronome/laravel-6x#Overview). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see releases section of the [pattern overview page](https://pyronome.com/pyronome/laravel-6x#Overview). 
 
 ## Authors
 
