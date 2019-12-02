@@ -7,7 +7,7 @@ This repository contains Pyronome **Laravel 6.x** pattern basic information, doc
 
 ## Contributing
 
-Please use the [issue tracker](https://github.com/pyronome/laravel-6x/issues) to report any bugs/typos or requests.
+Please use the [issue tracker](https://github.com/pyronome/pattern-laravel-6x/issues) to report any bugs/typos or requests.
 
 ## Versioning
 
@@ -20,4 +20,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/pyronome/laravel-6x/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/pyronome/pattern-laravel-6x/blob/master/LICENSE) file for details
