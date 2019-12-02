@@ -11,7 +11,7 @@ Please use the [issue tracker](https://github.com/pyronome/pattern-webmvc/issues
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/pyronome/pattern-webmvc/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/pyronome/laravel-6x/tags). 
 
 ## Authors
 
@@ -20,4 +20,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/pyronome/pattern-webmvc/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/pyronome/laravel-6x/blob/master/LICENSE) file for details
