@@ -1,7 +1,7 @@
 **Pyronome** is an online platform that allows software developers to develop sustainable and scalable software solutions really fast.
 For further information, please visit https://pyronome.com.
 
-Laravel is a web application framework with expressive, elegant syntax.
+**Laravel** is a web application framework with expressive, elegant syntax. For further information about **Laravel** Framework, please visit https://laravel.com/.
 
 This repository contains Pyronome **Laravel 6.x** pattern basic information, documentation and issue tracker. For further information about this pattern, please visit https://pyronome.com/pyronome/laravel-6x. In order to generate source code using this pattern, please visit [Pyronome Sign Up Page](https://pyronome.com/builder/signup), and create an account.
 
