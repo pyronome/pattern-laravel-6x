@@ -7,11 +7,11 @@ This repository contains Pyronome **Laravel 6.x** pattern basic information, doc
 
 ## Contributing
 
-Please use the [issue tracker](https://github.com/pyronome/pattern-webmvc/issues) to report any bugs/typos or requests.
+Please use the [issue tracker](https://github.com/pyronome/laravel-6x/issues) to report any bugs/typos or requests.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/pyronome/laravel-6x/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [pattern overview page](https://pyronome.com/pyronome/laravel-6x#Overview). 
 
 ## Authors
 
