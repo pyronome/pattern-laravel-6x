@@ -3,7 +3,7 @@ For further information, please visit https://pyronome.com.
 
 Laravel is a web application framework with expressive, elegant syntax.
 
-This repository contains Pyronome **Laravel 6.x** pattern basic information, documentation and issues. For further information about this pattern, please visit https://pyronome.com/pyronome/laravel-6x. In order to generate source code using this pattern, please visit [Pyronome Sign Up Page](https://pyronome.com/builder/signup), and create an account.
+This repository contains Pyronome **Laravel 6.x** pattern basic information, documentation and issue tracker. For further information about this pattern, please visit https://pyronome.com/pyronome/laravel-6x. In order to generate source code using this pattern, please visit [Pyronome Sign Up Page](https://pyronome.com/builder/signup), and create an account.
 
 ## Contributing
 
