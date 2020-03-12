@@ -47,6 +47,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
+
         /* {{snippet:begin_map_method}} */
 
         $this->mapApiRoutes();
@@ -54,6 +55,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         /* {{snippet:end_map_method}} */
+
     }
 
     /**
@@ -86,6 +88,7 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /* {{snippet:end_methods}} */
+
 }
 
 /* {{snippet:end_class}} */
