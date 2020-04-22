@@ -1,0 +1,40 @@
+{{@ ../property_type_Checkbox}}
+			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Date}}
+			$table->date('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_DateTime}}
+			$table->dateTime('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Selection}}
+			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_EmailAddress}}
+			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_FileList}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_HTMLEditor}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_ImageList}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Integer}}
+			$table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Location}}
+			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_LongText}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Number}}
+			$table->double('{{$ ../name/__value__/__lowercase_text__}}', 8, 2);
+{{@ ../property_type_ClassSlection}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Password}}
+			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_PhoneNumber}}
+			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Radio}}
+			$table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_ShortText}}
+			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Switch}}
+			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_Time}}
+			$table->time('{{$ ../name/__value__/__lowercase_text__}}');
+{{@ ../property_type_URLAddress}}
+			$table->string('{{$ ../name/__value__/__lowercase_text__}}');

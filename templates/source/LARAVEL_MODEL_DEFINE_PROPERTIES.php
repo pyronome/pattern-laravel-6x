@@ -1,0 +1,1 @@
+		'{{$ __value__/__lowercase_text__}}'

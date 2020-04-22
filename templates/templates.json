@@ -1,0 +1,101 @@
+[
+    {
+        "base":"\/project\/model_list\/model\/name",
+        "enabled":"1",
+        "source":"source\/Model.php",
+        "destination":"\/source\/app\/{{$ __value__}}.php",
+        "temporary":"0",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    },
+    {
+        "base":"\/project\/model_list\/model\/name",
+        "enabled":"1",
+        "source":"source\/DatabaseMigrationClass.php",
+        "destination":"\/source\/database\/migrations\/{{$ __globals__\/PYRONOME_CURRENT_YEAR}}_{{$ __globals__\/PYRONOME_CURRENT_MONTH}}_{{$ __globals__\/PYRONOME_CURRENT_DAY}}_000000_create_{{$ __value__\/__lowercase_text__}}_table.php",
+        "temporary":"0",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
+        "enabled":"1",
+        "source":"",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/__item_index__\/__value__}}_DEFINE_PROPERTIES",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":""
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
+        "enabled":"1",
+        "source":"",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/__item_index__\/__value__}}_MIGRATION_PROPERTIES",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":""
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/property\/name",
+        "enabled":"1",
+        "source":"source\/LARAVEL_MODEL_DEFINE_PROPERTIES.php",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_DEFINE_PROPERTIES",
+        "temporary":"1",
+        "append":"1",
+        "glue":",",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/property\/name",
+        "enabled":"1",
+        "source":"source\/source202039172952382386bb",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_PROPERTIES",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"1",
+        "append_crlf":"0"
+    },
+    {
+        "base":"\/project\/model_list\/model\/name",
+        "enabled":"1",
+        "source":"source\/dbdumb.sql",
+        "destination":"\/install\/dbdumb.sql",
+        "temporary":"0",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    },
+    {
+        "base":"\/project\/model_list\/model",
+        "enabled":"1",
+        "source":"",
+        "destination":"LARAVEL_INSTALL_MODEL{{$ __item_index__\/__value__}}_DBDUMP_FIELDS",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":""
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/property\/name",
+        "enabled":"1",
+        "source":"source\/LARAVEL_INSTALL_MODEL_DBDUMP_FIELDS.php",
+        "destination":"LARAVEL_INSTALL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_DBDUMP_FIELDS",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    }
+]

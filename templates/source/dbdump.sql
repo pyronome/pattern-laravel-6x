@@ -1,0 +1,10 @@
+# ------------------------------------------------------------------
+# CREATE {{$ __value__/__uppercase_text__}} TABLE
+# ------------------------------------------------------------------
+
+CREATE TABLE `{{$ __value__/__lowercase_text__}}table` (
+		`id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		`deleted` CHAR(1) NOT NULL DEFAULT '0',
+		`creationdate` DATETIME,
+		`lastupdate` DATETIME,{{LARAVEL_INSTALL_MODEL{{$ ../__item_index__/__value__}}_DBDUMP_FIELDS}}
+PRIMARY KEY  (`id`)) ENGINE='MyISAM' ROW_FORMAT=FIXED;
