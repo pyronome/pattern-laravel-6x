@@ -1,40 +1,41 @@
-{{@ ../property_type_Checkbox}}
+{{@if {{$ ../property_type/__value__}} == "Checkbox"}}
 			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Date}}
+{{@elseif {{$ ../property_type/__value__}} == "Date"}}
 			$table->date('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_DateTime}}
+{{@elseif {{$ ../property_type/__value__}} == "DateTime"}}
 			$table->dateTime('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Selection}}
+{{@elseif {{$ ../property_type/__value__}} == "Selection"}}
 			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_EmailAddress}}
+{{@elseif {{$ ../property_type/__value__}} == "EmailAddress"}}
 			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_FileList}}
+{{@elseif {{$ ../property_type/__value__}} == "FileList"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_HTMLEditor}}
+{{@elseif {{$ ../property_type/__value__}} == "HTMLEditor"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_ImageList}}
+{{@elseif {{$ ../property_type/__value__}} == "ImageList"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Integer}}
+{{@elseif {{$ ../property_type/__value__}} == "Integer"}}
 			$table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Location}}
+{{@elseif {{$ ../property_type/__value__}} == "Location"}}
 			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_LongText}}
+{{@elseif {{$ ../property_type/__value__}} == "LongText"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Number}}
+{{@elseif {{$ ../property_type/__value__}} == "Number"}}
 			$table->double('{{$ ../name/__value__/__lowercase_text__}}', 8, 2);
-{{@ ../property_type_ClassSlection}}
+{{@elseif {{$ ../property_type/__value__}} == "ClassSlection"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Password}}
+{{@elseif {{$ ../property_type/__value__}} == "Password"}}
 			$table->longText('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_PhoneNumber}}
+{{@elseif {{$ ../property_type/__value__}} == "PhoneNumber"}}
 			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Radio}}
+{{@elseif {{$ ../property_type/__value__}} == "Radio"}}
 			$table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_ShortText}}
+{{@elseif {{$ ../property_type/__value__}} == "ShortText"}}
 			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Switch}}
+{{@elseif {{$ ../property_type/__value__}} == "Switch"}}
 			$table->smallInteger('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_Time}}
+{{@elseif {{$ ../property_type/__value__}} == "Time"}}
 			$table->time('{{$ ../name/__value__/__lowercase_text__}}');
-{{@ ../property_type_URLAddress}}
+{{@elseif {{$ ../property_type/__value__}} == "URLAddress"}}
 			$table->string('{{$ ../name/__value__/__lowercase_text__}}');
+{{@endif}}
