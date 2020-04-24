@@ -57,7 +57,7 @@
     {
         "base":"\/project\/model_list\/model\/property_list\/property\/name",
         "enabled":"1",
-        "source":"source\/source202039172952382386bb",
+        "source":"source\/LARAVEL_MODEL_MIGRATION_PROPERTIES.php",
         "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_PROPERTIES",
         "temporary":"1",
         "append":"1",
