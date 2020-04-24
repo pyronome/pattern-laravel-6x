@@ -1,40 +1,41 @@
-{{@ ../property_type_Checkbox}}
+{{@if {{$ ../property_type/__value__}} == "Checkbox"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` CHAR(1) NOT NULL DEFAULT '0',
-{{@ ../property_type_Date}}
+{{@elseif {{$ ../property_type/__value__}} == "Date"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` DATE DEFAULT NULL,
-{{@ ../property_type_DateTime}}
+{{@elseif {{$ ../property_type/__value__}} == "DateTime"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
-{{@ ../property_type_Selection}}
+{{@elseif {{$ ../property_type/__value__}} == "Selection"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` CHAR(1) NOT NULL DEFAULT '0',
-{{@ ../property_type_EmailAddress}}
+{{@elseif {{$ ../property_type/__value__}} == "EmailAddress"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` VARCHAR(255) DEFAULT NULL,
-{{@ ../property_type_FileList}}
+{{@elseif {{$ ../property_type/__value__}} == "FileList"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_HTMLEditor}}
+{{@elseif {{$ ../property_type/__value__}} == "HTMLEditor"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_ImageList}}
+{{@elseif {{$ ../property_type/__value__}} == "ImageList"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_Integer}}
+{{@elseif {{$ ../property_type/__value__}} == "Integer"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` INTEGER NOT NULL DEFAULT '0',
-{{@ ../property_type_Location}}
+{{@elseif {{$ ../property_type/__value__}} == "Location"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` VARCHAR(255) DEFAULT NULL,
-{{@ ../property_type_LongText}}
+{{@elseif {{$ ../property_type/__value__}} == "LongText"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_ClassSelection}}
+{{@elseif {{$ ../property_type/__value__}} == "ClassSelection"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_Number}}
+{{@elseif {{$ ../property_type/__value__}} == "Number"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` DOUBLE NOT NULL DEFAULT '0.0',
-{{@ ../property_type_Password}}
+{{@elseif {{$ ../property_type/__value__}} == "Password"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{@ ../property_type_PhoneNumber}}
+{{@elseif {{$ ../property_type/__value__}} == "PhoneNumber"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` VARCHAR(255) DEFAULT NULL,
-{{@ ../property_type_Radio}}
+{{@elseif {{$ ../property_type/__value__}} == "Radio"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` BIGINT UNSIGNED NOT NULL DEFAULT '0',
-{{@ ../property_type_ShortText}}
+{{@elseif {{$ ../property_type/__value__}} == "ShortText"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` VARCHAR(255) DEFAULT NULL,
-{{@ ../property_type_Switch}}
+{{@elseif {{$ ../property_type/__value__}} == "Switch"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` CHAR(1) NOT NULL DEFAULT '0',
-{{@ ../property_type_Time}}
+{{@elseif {{$ ../property_type/__value__}} == "Time"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TIME NOT NULL DEFAULT '00:00:00',
-{{@ ../property_type_URLAddress}}
+{{@elseif {{$ ../property_type/__value__}} == "URLAddress"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
+{{endif}}
