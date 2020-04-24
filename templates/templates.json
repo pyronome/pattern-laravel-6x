@@ -68,8 +68,8 @@
     {
         "base":"\/project\/model_list\/model\/name",
         "enabled":"1",
-        "source":"source\/dbdumb.sql",
-        "destination":"\/install\/dbdumb.sql",
+        "source":"source\/dbdump.sql",
+        "destination":"\/install\/dbdump.sql",
         "temporary":"0",
         "append":"1",
         "glue":"",
