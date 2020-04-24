@@ -38,4 +38,4 @@
 		`{{$ ../name/__value__/__lowercase_text__}}` TIME NOT NULL DEFAULT '00:00:00',
 {{@elseif {{$ ../property_type/__value__}} == "URLAddress"}}
 		`{{$ ../name/__value__/__lowercase_text__}}` TEXT DEFAULT NULL,
-{{endif}}
+{{@endif}}
