@@ -27,7 +27,7 @@ class Create{{$ __value__}}Table extends Migration
         Schema::create('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->boolean('deleted');
+            $table->boolean('deleted')->default(0);
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_PROPERTIES}}
         });
 
