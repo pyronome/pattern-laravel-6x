@@ -33,6 +33,17 @@
         "append_crlf":""
     },
     {
+        "base":"\/project\/model_list\/model\/property_list\/property\/name",
+        "enabled":"1",
+        "source":"source\/LARAVEL_MODEL_DEFINE_PROPERTIES.php",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_DEFINE_PROPERTIES",
+        "temporary":"1",
+        "append":"1",
+        "glue":",",
+        "prepend_crlf":"",
+        "append_crlf":"1"
+    },
+    {
         "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
         "enabled":"1",
         "source":"",
@@ -46,19 +57,30 @@
     {
         "base":"\/project\/model_list\/model\/property_list\/property\/name",
         "enabled":"1",
-        "source":"source\/LARAVEL_MODEL_DEFINE_PROPERTIES.php",
-        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_DEFINE_PROPERTIES",
-        "temporary":"1",
-        "append":"1",
-        "glue":",",
-        "prepend_crlf":"",
-        "append_crlf":"1"
-    },
-    {
-        "base":"\/project\/model_list\/model\/property_list\/property\/name",
-        "enabled":"1",
         "source":"source\/LARAVEL_MODEL_MIGRATION_PROPERTIES.php",
         "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_PROPERTIES",
+        "temporary":"1",
+        "append":"0",
+        "glue":"",
+        "prepend_crlf":"0",
+        "append_crlf":"0"
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/property_type_FileList",
+        "enabled":"1",
+        "source":"source\/LARAVEL_MODEL_MIGRATION_FILE_IMAGE_PROPERTY.php",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/__item_index__\/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY",
+        "temporary":"1",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"1",
+        "append_crlf":"0"
+    },
+    {
+        "base":"\/project\/model_list\/model\/property_list\/property_type_ImageList",
+        "enabled":"1",
+        "source":"source\/LARAVEL_MODEL_MIGRATION_FILE_IMAGE_PROPERTY.php",
+        "destination":"LARAVEL_MODEL{{$ ..\/..\/__item_index__\/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY",
         "temporary":"1",
         "append":"1",
         "glue":"",
