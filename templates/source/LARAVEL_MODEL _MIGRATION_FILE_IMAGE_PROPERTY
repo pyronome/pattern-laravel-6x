@@ -1,0 +1,14 @@
+        Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+            $table->boolean('deleted')->default(0);
+            $table->smallInteger('enabled')->default(0);
+            $table->string('guid')->default(NULL);
+            $table->bigInteger('file_index')->default(0);
+            $table->bigInteger('object_id')->default(0);
+            $table->string('object_property')->default(NULL);
+            $table->string('file_name')->default(NULL);
+            $table->bigInteger('file_size')->default(0);
+            $table->smallInteger('media_type')->default(0);
+            $table->string('path')->default(NULL);
+        });
