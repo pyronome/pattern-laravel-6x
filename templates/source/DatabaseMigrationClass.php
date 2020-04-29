@@ -31,6 +31,8 @@ class Create{{$ __value__}}Table extends Migration
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_PROPERTIES}}
         });
 
+{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
+
         /* {{snippet:end_up_method}} */
     }
 
