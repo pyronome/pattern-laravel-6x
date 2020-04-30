@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 
-{{snippet:header}}
+{{@snippet:header}}
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +15,4 @@ use Illuminate\Http\Request;
 |
 */
 
-{{snippet:routes}}
+{{@snippet:routes}}

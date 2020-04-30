@@ -2,7 +2,7 @@
 
 return [
 
-    /* {{snippet:begin_auth}} */
+    /* {{@snippet:begin_auth}} */
 
     /*
     |--------------------------------------------------------------------------
@@ -15,16 +15,16 @@ return [
     |
     */
 
-    /* {{snippet:begin_defaults}} */
+    /* {{@snippet:begin_defaults}} */
 
     'defaults' => [
-        /* {{snippet:begin_defaults_items}} */
+        /* {{@snippet:begin_defaults_items}} */
         'guard' => 'web',
         'passwords' => 'users',
-        /* {{snippet:end_defaults_items}} */
+        /* {{@snippet:end_defaults_items}} */
     ],
 
-    /* {{snippet:end_defaults}} */
+    /* {{@snippet:end_defaults}} */
 
     /*
     |--------------------------------------------------------------------------
@@ -43,10 +43,10 @@ return [
     |
     */
 
-    /* {{snippet:begin_guards}} */
+    /* {{@snippet:begin_guards}} */
 
     'guards' => [
-        /* {{snippet:begin_guards_items}} */
+        /* {{@snippet:begin_guards_items}} */
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -57,10 +57,10 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
-        /* {{snippet:end_guards_items}} */
+        /* {{@snippet:end_guards_items}} */
     ],
 
-    /* {{snippet:end_guards}} */
+    /* {{@snippet:end_guards}} */
 
     /*
     |--------------------------------------------------------------------------
@@ -79,10 +79,10 @@ return [
     |
     */
 
-    /* {{snippet:begin_providers}} */
+    /* {{@snippet:begin_providers}} */
 
     'providers' => [
-        /* {{snippet:begin_providers_items}} */
+        /* {{@snippet:begin_providers_items}} */
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
@@ -92,10 +92,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
-        /* {{snippet:end_providers_items}} */
+        /* {{@snippet:end_providers_items}} */
     ],
 
-    /* {{snippet:end_providers}} */
+    /* {{@snippet:end_providers}} */
 
     /*
     |--------------------------------------------------------------------------
@@ -112,20 +112,20 @@ return [
     |
     */
 
-    /* {{snippet:begin_passwords}} */
+    /* {{@snippet:begin_passwords}} */
 
     'passwords' => [
-        /* {{snippet:begin_passwords_items}} */
+        /* {{@snippet:begin_passwords_items}} */
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
         ],
-        /* {{snippet:end_passwords_items}} */
+        /* {{@snippet:end_passwords_items}} */
     ],
 
-    /* {{snippet:end_passwords}} */
+    /* {{@snippet:end_passwords}} */
 
     /*
     |--------------------------------------------------------------------------
@@ -140,5 +140,5 @@ return [
 
     'password_timeout' => 10800,
 
-    /* {{snippet:end_auth}} */
+    /* {{@snippet:end_auth}} */
 ];

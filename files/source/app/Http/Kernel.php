@@ -3,14 +3,14 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-/* {{snippet:begin_class}} */
+/* {{@snippet:begin_class}} */
 
 
 class Kernel extends HttpKernel
 {
-    /* {{snippet:begin_properties}} */
+    /* {{@snippet:begin_properties}} */
 
-    /* {{snippet:begin_middleware}} */
+    /* {{@snippet:begin_middleware}} */
     /**
      * The application's global HTTP middleware stack.
      *
@@ -19,24 +19,24 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        /* {{snippet:begin_middleware_array}} */
+        /* {{@snippet:begin_middleware_array}} */
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        /* {{snippet:end_middleware_array}} */
+        /* {{@snippet:end_middleware_array}} */
     ];
-    /* {{snippet:end_middleware}} */
+    /* {{@snippet:end_middleware}} */
 
-    /* {{snippet:begin_middleware_groups}} */
+    /* {{@snippet:begin_middleware_groups}} */
     /**
      * The application's route middleware groups.
      *
      * @var array
      */
     protected $middlewareGroups = [
-        /* {{snippet:begin_middleware_groups_array}} */
+        /* {{@snippet:begin_middleware_groups_array}} */
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
@@ -51,11 +51,11 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
-        /* {{snippet:end_middleware_groups_array}} */
+        /* {{@snippet:end_middleware_groups_array}} */
     ];
-    /* {{snippet:end_middleware_groups}} */
+    /* {{@snippet:end_middleware_groups}} */
 
-    /* {{snippet:begin_route_middleware}} */
+    /* {{@snippet:begin_route_middleware}} */
     /**
      * The application's route middleware.
      *
@@ -64,7 +64,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        /* {{snippet:begin_route_middleware_array}} */
+        /* {{@snippet:begin_route_middleware_array}} */
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
@@ -75,11 +75,11 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        /* {{snippet:end_route_middleware_array}} */
+        /* {{@snippet:end_route_middleware_array}} */
     ];
-    /* {{snippet:end_route_middleware}} */
+    /* {{@snippet:end_route_middleware}} */
 
-    /* {{snippet:begin_middleware_priority}} */
+    /* {{@snippet:begin_middleware_priority}} */
     /**
      * The priority-sorted list of middleware.
      *
@@ -88,7 +88,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewarePriority = [
-        /* {{snippet:begin_middleware_priority_array}} */
+        /* {{@snippet:begin_middleware_priority_array}} */
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\Authenticate::class,
@@ -96,11 +96,11 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\AuthenticateSession::class,
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,
-        /* {{snippet:end_middleware_priority_array}} */
+        /* {{@snippet:end_middleware_priority_array}} */
     ];
-    /* {{snippet:end_middleware_priority}} */
+    /* {{@snippet:end_middleware_priority}} */
 
-    /* {{snippet:end_properties}} */
+    /* {{@snippet:end_properties}} */
 }
 
-/* {{snippet:end_class}} */
+/* {{@snippet:end_class}} */

@@ -4,16 +4,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-/* {{snippet:begin_class}} */
+/* {{@snippet:begin_class}} */
 
 class Create{{$ __value__}}Table extends Migration
 {
 
-    /* {{snippet:begin_properties}} */
+    /* {{@snippet:begin_properties}} */
 
-    /* {{snippet:end_properties}} */
+    /* {{@snippet:end_properties}} */
 
-    /* {{snippet:begin_methods}} */
+    /* {{@snippet:begin_methods}} */
 
     /**
      * Run the migrations.
@@ -22,7 +22,7 @@ class Create{{$ __value__}}Table extends Migration
      */
     public function up()
     {
-        /* {{snippet:begin_up_method}} */
+        /* {{@snippet:begin_up_method}} */
      
         Schema::create('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -33,7 +33,7 @@ class Create{{$ __value__}}Table extends Migration
 
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
 
-        /* {{snippet:end_up_method}} */
+        /* {{@snippet:end_up_method}} */
     }
 
     /**
@@ -44,15 +44,15 @@ class Create{{$ __value__}}Table extends Migration
     public function down()
     {
 
-        /* {{snippet:begin_down_method}} */
+        /* {{@snippet:begin_down_method}} */
 
         Schema::drop('{{$ __value__/__lowercase_text__}}table');
 
-		/* {{snippet:end_down_method}} */
+		/* {{@snippet:end_down_method}} */
 
     }
 
-    /* {{snippet:end_methods}} */
+    /* {{@snippet:end_methods}} */
 }
 
-/* {{snippet:end_class}} */
+/* {{@snippet:end_class}} */
