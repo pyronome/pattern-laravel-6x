@@ -19,5 +19,8 @@
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
         *** {{snippet:devDependencies}} ***
+    },
+    "dependencies": {
+        *** {{snippet:dependencies}} ***
     }
 }
