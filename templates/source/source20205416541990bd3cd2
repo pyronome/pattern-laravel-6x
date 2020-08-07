@@ -1,0 +1,69 @@
+{{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "1"}}
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create{{$ ../../../name/__value__}}{{$ ../selection_properties/property_model/__value__}}Table extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        if(! Schema::hasTable('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}')) {
+            Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
+                $table->bigInteger('{{$ ../../../name/__value__/__lowercase_text__}}_id')->unsigned()->default(0);
+                $table->foreign('{{$ ../../../name/__value__/__lowercase_text__}}_id')->references('id')->on('{{$ ../../../name/__value__/__lowercase_text__}}table')->onDelete('cascade');
+                $table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}')->unsigned()->default(0);
+                $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table')->onDelete('cascade');
+                
+            });
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}');
+    }
+}
+{{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create{{$ ../../../name/__value__}}{{$ ../selection_properties/property_model/__value__}}Table extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
+            if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {
+                $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->default(0);
+            	$table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table');
+			}                
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+    }
+}
+{{@endif}}

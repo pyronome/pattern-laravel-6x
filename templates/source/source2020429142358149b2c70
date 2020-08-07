@@ -1,4 +1,4 @@
-        Schema::create('{{$ ../../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
+        Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}__filetable', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
             $table->boolean('deleted')->default(0);

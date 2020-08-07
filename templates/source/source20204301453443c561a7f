@@ -1,0 +1,6 @@
+{{@if {{$ ../selection_properties/property_model_multiple_selection_0/__value__}} == "0"}}
+    public function {{$ ../../../name/__value__}}_{{$ ../name/__value__/__lowercase_text__}}()
+    {
+        return $this->hasMany({{$ ../../../name/__value__}}::class);
+    }
+{{@endif}}

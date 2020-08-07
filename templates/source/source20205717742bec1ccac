@@ -1,0 +1,5 @@
+	public function get_{{$ ../name/__value__/__lowercase_text__}}() {
+        $modelNameWithNamespace = "\App\AdminLTE";
+        $adminLTE = new $modelNameWithNamespace;
+        return $adminLTE->get_model_files('{{$ ../../../name/__value__}}', $this->id, '{{$ ../name/__value__/__lowercase_text__}}');
+    }
