@@ -22,7 +22,7 @@ class {{$ __value__}} extends Model
 	];
 
 	public static $searchable = [
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_SEARCHABLE_PROPERTIES}}
+		{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_SEARCHABLE_PROPERTIES}}
 	];
 
 	public static $property_list = [

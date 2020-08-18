@@ -203,7 +203,7 @@
         "skip_empty":"1",
         "remove_whitespace":"1",
         "append":"1",
-        "glue":"",
+        "glue":",\n\t\t",
         "prepend_crlf":"0",
         "append_crlf":"1"
     },
