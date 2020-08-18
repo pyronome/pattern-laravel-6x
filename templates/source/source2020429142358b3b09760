@@ -3,61 +3,58 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
-use PDO;
 
 /* {{@snippet:begin_class}} */
 
 class {{$ __value__}} extends Model
 {
-    /* {{@snippet:begin_properties}} */
+	/* {{@snippet:begin_properties}} */
 
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = '{{$ __value__/__lowercase_text__}}table';
+	/**
+	 * The table associated with the model.
+	 *
+	 * @var string
+	 */
+	protected $table = '{{$ __value__/__lowercase_text__}}table';
 
-    protected $fillable = [
+	protected $fillable = [
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTIES}}
-    ];
+	];
 
 	public static $searchable = [
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_SEARCHABLE_PROPERTIES}}
-    ];
+	];
 
 	public static $property_list = [
 		[
-            'name' => 'id',
-            'type' => 'integer'
-        ],
+			'name' => 'id',
+			'type' => 'integer'
+		],
 
-        [
-            'name' => 'deleted',
-            'type' => 'checkbox'
-        ],
+		[
+			'name' => 'deleted',
+			'type' => 'checkbox'
+		],
 
-        [
-            'name' => 'created_at',
-            'type' => 'date'
-        ],
+		[
+			'name' => 'created_at',
+			'type' => 'date'
+		],
 
-        [
-            'name' => 'updated_at',
-            'type' => 'date'
-        ],
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
+		[
+			'name' => 'updated_at',
+			'type' => 'date'
+		],{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
 	];
 
-    /* {{@snippet:end_properties}} */
+	/* {{@snippet:end_properties}} */
 
-    /* {{@snippet:begin_methods}} */
+	/* {{@snippet:begin_methods}} */
 
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_BELONGSTO_METHODS}}
 {{LARAVEL_MODEL_{{$ __value__}}_HASMANY_METHODS}}
 
-    /* {{@snippet:end_methods}} */
+	/* {{@snippet:end_methods}} */
 }
 
 /* {{@snippet:end_class}} */
