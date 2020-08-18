@@ -51,7 +51,6 @@ class {{$ __value__}} extends Model
 	/* {{@snippet:end_properties}} */
 
 	/* {{@snippet:begin_methods}} */
-
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_BELONGSTO_METHODS}}
 {{LARAVEL_MODEL_{{$ __value__}}_HASMANY_METHODS}}
 
