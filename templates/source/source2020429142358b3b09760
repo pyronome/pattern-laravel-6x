@@ -44,7 +44,8 @@ class {{$ __value__}} extends Model
 		[
 			'name' => 'updated_at',
 			'type' => 'date'
-		],{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
+		],
+{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
 	];
 
 	/* {{@snippet:end_properties}} */
