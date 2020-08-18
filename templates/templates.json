@@ -205,7 +205,7 @@
         "append":"1",
         "glue":",\n\t\t",
         "prepend_crlf":"0",
-        "append_crlf":"1"
+        "append_crlf":"0"
     },
     {
         "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
