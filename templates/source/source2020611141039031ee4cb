@@ -51,7 +51,7 @@ class Create{{$ ../../../name/__value__}}{{$ ../name/__value__}}Table extends Mi
     {
         Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
             if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {
-                $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->default(0);
+                $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned();
             	$table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable');
 			}                
         });
