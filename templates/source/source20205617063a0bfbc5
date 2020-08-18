@@ -12,6 +12,7 @@
 {{@else}}
 			'type' => 'class_selection_multiple'
 {{@endif}}
+
 		]
 {{@elseif {{$ ../property_type/__value__}} == 'Date'}}
 		[
@@ -32,6 +33,7 @@
 {{@else}}
 			'type' => 'selection_multiple'
 {{@endif}}
+
 		]
 {{@elseif {{$ ../property_type/__value__}} == 'EmailAddress'}}
 		[
