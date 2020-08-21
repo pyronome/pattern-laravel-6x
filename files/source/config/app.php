@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /* {{@snippet:begin_app}} */
     
     /*
@@ -176,7 +177,9 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+
          /* {{@snippet:begin_framework_providers}} */
+
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -199,21 +202,29 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+
         /* {{@snippet:end_framework_providers}} */
+
         /*
          * Package Service Providers...
          */
+
         /* {{@snippet:begin_package_service_providers}} */
+
         /* {{@snippet:end_package_service_providers}} */
+
         /*
          * Application Service Providers...
          */
+
          /* {{@snippet:begin_application_service_providers}} */
+
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
         /* {{@snippet:end_application_service_providers}} */
 
     ],
@@ -230,7 +241,9 @@ return [
     */
 
     'aliases' => [
+
         /* {{@snippet:begin_aliases}} */
+
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -267,7 +280,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
         /* {{@snippet:end_aliases}} */
+
     ],
+
     /* {{@snippet:end_app}} */
+
 ];
