@@ -1,0 +1,156 @@
+{{@if {{$ ../property_type/__value__}} == 'Checkbox'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'checkbox',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'ClassSelection'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+
+{{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
+            'type' => 'class_selection_single',
+
+{{@else}}
+            'type' => 'class_selection_multiple',
+
+{{@endif}}
+            'belongs_to' => '{{$ ../selection_properties/property_model/__value__}}',
+            'display_property' => '{{$ ../selection_properties/property_model_display_template/__value__}}'
+
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Date'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'date',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'DateTime'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'date',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Selection'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+
+{{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
+            'type' => 'selection_single',
+
+{{@else}}
+            'type' => 'selection_multiple',
+
+{{@endif}}
+            'belongs_to' => 'AdminLTEModelOption',
+            'display_property' => 'title'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'EmailAddress'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'FileList'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'file',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'HTMLEditor'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'ImageList'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'image',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Integer'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'integer',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Location'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'location',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'LongText'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Number'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'number',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Password'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'PhoneNumber'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Radio'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'selection_single',
+            'belongs_to' => 'AdminLTEModelOption',
+            'display_property' => 'title'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'ShortText'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Switch'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'checkbox',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'Time'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'date',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@elseif {{$ ../property_type/__value__}} == 'URLAddress'}}
+        [
+            'name' => '{{$ ../name/__value__/__lowercase_text__}}',
+            'type' => 'text',
+            'belongs_to' => '{{$ ../../../name/__value__}}',
+            'display_property' => '{{$ ../name/__value__/__lowercase_text__}}'
+        ]
+{{@endif}}
