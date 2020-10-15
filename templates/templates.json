@@ -90,36 +90,6 @@
         "append_crlf":"0"
     },
     {
-        "description":"Belongs To Methods (Selection)",
-        "base":"\/project\/model_list\/model\/property_list\/property\/property_type_Selection",
-        "enabled":"1",
-        "source":"source\/source523020918082020qFQV1uKD",
-        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_BELONGSTO_METHODS",
-        "temporary":"1",
-        "skip_empty":"0",
-        "skip_whitespace":"0",
-        "remove_whitespace":"0",
-        "append":"1",
-        "glue":"",
-        "prepend_crlf":"1",
-        "append_crlf":"0"
-    },
-    {
-        "description":"Belongs To Methods (Radio)",
-        "base":"\/project\/model_list\/model\/property_list\/property\/property_type_Radio",
-        "enabled":"1",
-        "source":"source\/sourced23020918082020CNse1Gsi",
-        "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_BELONGSTO_METHODS",
-        "temporary":"1",
-        "skip_empty":"0",
-        "skip_whitespace":"0",
-        "remove_whitespace":"0",
-        "append":"1",
-        "glue":"",
-        "prepend_crlf":"1",
-        "append_crlf":"0"
-    },
-    {
         "description":"HasMany Methods (empty)",
         "base":"\/project\/model_list\/model\/name",
         "enabled":"1",
