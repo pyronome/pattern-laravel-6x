@@ -225,7 +225,7 @@
         "append_crlf":"1"
     },
     {
-        "description":"Migration Properties (Selection empty)",
+        "description":"Migration Properties UP (Selection empty)",
         "base":"\/project\/model_list\/model",
         "enabled":"1",
         "source":"",
@@ -240,7 +240,7 @@
         "append_crlf":"0"
     },
     {
-        "description":"Migration Properties (Selection)",
+        "description":"Migration Properties UP (Selection)",
         "base":"\/project\/model_list\/model\/property_list\/property\/property_type_Selection",
         "enabled":"1",
         "source":"source\/migration\/selection_up_definition",
@@ -249,13 +249,13 @@
         "skip_empty":"0",
         "skip_whitespace":"0",
         "remove_whitespace":"0",
-        "append":"0",
+        "append":"1",
         "glue":"",
         "prepend_crlf":"1",
         "append_crlf":"0"
     },
     {
-        "description":"Migration Properties (Selection empty)",
+        "description":"Migration Properties DOWN (Selection empty)",
         "base":"\/project\/model_list\/model",
         "enabled":"1",
         "source":"",
@@ -270,7 +270,7 @@
         "append_crlf":"0"
     },
     {
-        "description":"Migration Properties (Selection)",
+        "description":"Migration Properties DOWN (Selection)",
         "base":"\/project\/model_list\/model\/property_list\/property\/property_type_Selection",
         "enabled":"1",
         "source":"source\/migration\/selection_down_definition",
@@ -279,7 +279,7 @@
         "skip_empty":"0",
         "skip_whitespace":"0",
         "remove_whitespace":"0",
-        "append":"0",
+        "append":"1",
         "glue":"",
         "prepend_crlf":"1",
         "append_crlf":"0"
