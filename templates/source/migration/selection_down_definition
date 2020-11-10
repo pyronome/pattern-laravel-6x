@@ -1,0 +1,3 @@
+{{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "1"}}
+        Schema::dropIfExists('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}');
+{{@endif}}
