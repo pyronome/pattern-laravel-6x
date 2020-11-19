@@ -26,28 +26,32 @@ class {{$ __value__}} extends Model
 			'name' => 'id',
 			'type' => 'integer',
 			'belongs_to' => '{{$ __value__}}',
-			'display_property' => 'id'
+			'display_property' => 'id',
+			'title' => 'Id'
 		],
 
 		[
 			'name' => 'deleted',
 			'type' => 'checkbox',
 			'belongs_to' => '{{$ __value__}}',
-			'display_property' => 'deleted'
+			'display_property' => 'deleted',
+			'title' => 'Deleted'
 		],
 
 		[
 			'name' => 'created_at',
 			'type' => 'date',
 			'belongs_to' => '{{$ __value__}}',
-			'display_property' => 'created_at'
+			'display_property' => 'created_at',
+			'title' => 'Created At'
 		],
 
 		[
 			'name' => 'updated_at',
 			'type' => 'date',
 			'belongs_to' => '{{$ __value__}}',
-			'display_property' => 'updated_at'
+			'display_property' => 'updated_at',
+			'title' => 'Updated at'
 		],
 {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
 	];
