@@ -301,10 +301,10 @@
     },
     {
         "description":"Migration Model Relationships",
-        "base":"\/project\/model_list\/model",
+        "base":"\/project\/model_list\/model\/name",
         "enabled":"1",
         "source":"source\/migration\/model_relationships",
-        "destination":"\/source\/database\/migrations\/{{$ __globals__\/PYRONOME_CURRENT_YEAR}}_{{$ __globals__\/PYRONOME_CURRENT_MONTH}}_{{$ __globals__\/PYRONOME_CURRENT_DAY}}_000100_update_{{$ name\/__value__\/__lowercase_text__}}_relationships.php",
+        "destination":"\/source\/database\/migrations\/{{$ __globals__\/PYRONOME_CURRENT_YEAR}}_{{$ __globals__\/PYRONOME_CURRENT_MONTH}}_{{$ __globals__\/PYRONOME_CURRENT_DAY}}_000100_update_{{$ __value__\/__lowercase_text__}}_relationships.php",
         "temporary":"0",
         "skip_empty":"0",
         "skip_whitespace":"0",
