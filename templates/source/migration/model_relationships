@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Update{{$ ../../../name/__value__}}ForeignTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+{{MIGRATION_MODEL_{{$ ../__item_index__/__value__}}_CLASS_SELECTION_UP}}
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+{{MIGRATION_MODEL_{{$ ../__item_index__/__value__}}_CLASS_SELECTION_DOWN}}
+    }
+}
