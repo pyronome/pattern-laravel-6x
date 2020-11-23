@@ -1,18 +1,18 @@
-        {{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "1"}}
-            if(! Schema::hasTable('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}')) {
-                Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
-                    $table->bigInteger('{{$ ../../../name/__value__/__lowercase_text__}}_id')->unsigned()->default(0);
-                    $table->foreign('{{$ ../../../name/__value__/__lowercase_text__}}_id')->references('id')->on('{{$ ../../../name/__value__/__lowercase_text__}}table')->onDelete('cascade');
-                    $table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}')->unsigned()->default(0);
-                    $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table')->onDelete('cascade');
-                    
-                });
-            }
-        {{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
-            Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
-                if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {
-                    $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned();
-                    $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table');
-                }                
-            });
-        {{@endif}}
+{{@if {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "1"}}
+    if(! Schema::hasTable('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}')) {
+        Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
+            $table->bigInteger('{{$ ../../../name/__value__/__lowercase_text__}}_id')->unsigned()->default(0);
+            $table->foreign('{{$ ../../../name/__value__/__lowercase_text__}}_id')->references('id')->on('{{$ ../../../name/__value__/__lowercase_text__}}table')->onDelete('cascade');
+            $table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}')->unsigned()->default(0);
+            $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table')->onDelete('cascade');
+            
+        });
+    }
+{{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
+    Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
+        if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {
+            $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned();
+            $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}table');
+        }                
+    });
+{{@endif}}

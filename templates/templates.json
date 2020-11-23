@@ -363,7 +363,7 @@
         "description":"Migration Model Relationships | DOWN",
         "base":"\/project\/model_list\/model\/property_list\/property\/property_type_ClassSelection",
         "enabled":"1",
-        "source":"source\/migration\/classselection_up_definition",
+        "source":"source\/migration\/classselection_down_definition",
         "destination":"MIGRATION_MODEL_{{$ ..\/..\/..\/__item_index__\/__value__}}_CLASS_SELECTION_DOWN",
         "temporary":"1",
         "skip_empty":"0",
