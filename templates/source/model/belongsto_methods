@@ -8,6 +8,11 @@
 
 	public function {{$ ../name/__value__/__lowercase_text__}}()
 	{
-		return $this->belongsToMany({{$ ../selection_properties/property_model/__value__}}::class, '{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}');
+		return $this->belongsToMany(
+				{{$ ../selection_properties/property_model/__value__}}::class,
+				'{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}',
+				'{{$ ../../../name/__value__/__lowercase_text__}}_id',
+				'{{$ ../selection_properties/property_model/__value__/__lowercase_text__}}_id'
+			);
 	}
 {{@endif}}
