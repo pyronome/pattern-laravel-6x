@@ -2,7 +2,7 @@
 
 This repository contains Pyronome **Laravel 6.x** pattern basic information, pattern files, pattern templates, documentation and issue tracker. For further information about this pattern, please visit https://pyronome.com/pyronome/laravel-6x.
 
-**Please note that you cannot directly use this repository.** To generate source code using this pattern, please visit [Pyronome Sign Up Page](https://pyronome.com/builder/signup), and create an account.
+**Please note that you cannot directly use this repository.** To generate source code using this pattern, please visit [Pyronome Sign Up Page](https://platform.pyronome.com/builder/signup), and create an account.
 
 Please refer to the [Getting Started](https://github.com/pyronome/pattern-laravel-6x#getting-started) section for step by step instructions.
 
