@@ -230,7 +230,7 @@
         "enabled":"1",
         "source":"source\/migration\/property_update_definitions",
         "destination":"LARAVEL_MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_UPDATE",
-        "temporary":"1",
+        "temporary":"0",
         "skip_empty":"0",
         "skip_whitespace":"0",
         "remove_whitespace":"0",
