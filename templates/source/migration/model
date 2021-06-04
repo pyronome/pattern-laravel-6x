@@ -29,15 +29,15 @@ class Create{{$ __value__}}Table extends Migration
                 $table->bigIncrements('id');
                 $table->timestamps();
                 $table->boolean('deleted')->default(0);
-    {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_PROPERTIES}}
+    {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_PROPERTIES}}
             });
         
 
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
 
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
 
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}
         } // if (!Schema::hasTable('{{$ __value__/__lowercase_text__}}table')) {
 
         /* {{@snippet:end_up_method}} */
@@ -54,7 +54,7 @@ class Create{{$ __value__}}Table extends Migration
         /* {{@snippet:begin_down_method}} */
 
         Schema::drop('{{$ __value__/__lowercase_text__}}table');
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_DOWN_SELECTION_PROPERTY}}        
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_DOWN_SELECTION_PROPERTY}}        
 
 		/* {{@snippet:end_down_method}} */
 

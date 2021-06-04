@@ -1,2 +1,2 @@
         Schema::drop('{{$ __value__/__lowercase_text__}}table');
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_DOWN_SELECTION_PROPERTY}}  
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_DOWN_SELECTION_PROPERTY}}  

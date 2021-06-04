@@ -3,17 +3,17 @@
                 $table->bigIncrements('id');
                 $table->timestamps();
                 $table->boolean('deleted')->default(0);
-                {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_CREATE}}
+                {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_CREATE}}
             });
         } else {
             Schema::table('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
                 $foreignKeys = $this->listTableForeignKeys('{{$ __value__/__lowercase_text__}}table');
 
-                {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UPATE}}
+                {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UPDATE}}
             });
             
         } // if (!Schema::hasTable('{{$ __value__/__lowercase_text__}}table')) {
 
-        {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
-        {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
-        {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}
+        {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
+        {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
+        {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}

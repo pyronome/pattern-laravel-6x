@@ -18,7 +18,7 @@ class {{$ __value__}} extends Model
 	protected $table = '{{$ __value__/__lowercase_text__}}table';
 
 	protected $fillable = [
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTIES}}
+{{MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTIES}}
 	];
 
 	public static $property_list = [
@@ -53,14 +53,14 @@ class {{$ __value__}} extends Model
 			'display_property' => 'updated_at',
 			'title' => 'Updated at'
 		],
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
+{{MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
 	];
 
 	/* {{@snippet:end_properties}} */
 
 	/* {{@snippet:begin_methods}} */
-{{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_BELONGSTO_METHODS}}
-{{LARAVEL_MODEL_{{$ __value__}}_HASMANY_METHODS}}
+{{MODEL{{$ ../__item_index__/__value__}}_BELONGSTO_METHODS}}
+{{MODEL_{{$ __value__}}_HASMANY_METHODS}}
 
 	/* {{@snippet:end_methods}} */
 }
