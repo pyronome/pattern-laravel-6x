@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 /* {{@snippet:begin_class}} */
 
-class MigrateVersion{{$ __globals__\/PYRONOME_CURRENT_DATE}}{{$ __globals__\/PYRONOME_CURRENT_TIME}} extends Migration
+class MigrateVersion{{$ __globals__/PYRONOME_CURRENT_DATE}}{{$ __globals__/PYRONOME_CURRENT_TIME}} extends Migration
 {
 
     /* {{@snippet:begin_properties}} */
