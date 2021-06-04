@@ -162,7 +162,7 @@
         "append":"1",
         "glue":"",
         "prepend_crlf":"1",
-        "append_crlf":"0"
+        "append_crlf":"1"
     },
     {
         "description":"Model Migration",
@@ -251,8 +251,8 @@
         "remove_whitespace":"0",
         "append":"0",
         "glue":"",
-        "prepend_crlf":"0",
-        "append_crlf":"0"
+        "prepend_crlf":"1",
+        "append_crlf":"1"
     },
     {
         "description":"Migration Properties (File)",
@@ -264,10 +264,10 @@
         "skip_empty":"1",
         "skip_whitespace":"1",
         "remove_whitespace":"0",
-        "append":"0",
+        "append":"1",
         "glue":"",
-        "prepend_crlf":"1",
-        "append_crlf":"0"
+        "prepend_crlf":"0",
+        "append_crlf":"1"
     },
     {
         "description":"Migration Properties (Image)",
@@ -296,8 +296,8 @@
         "remove_whitespace":"0",
         "append":"0",
         "glue":"",
-        "prepend_crlf":"0",
-        "append_crlf":"0"
+        "prepend_crlf":"1",
+        "append_crlf":"1"
     },
     {
         "description":"Migration Properties UP (Selection)",
@@ -311,8 +311,8 @@
         "remove_whitespace":"0",
         "append":"1",
         "glue":"",
-        "prepend_crlf":"1",
-        "append_crlf":"0"
+        "prepend_crlf":"0",
+        "append_crlf":"1"
     },
     {
         "description":"Model Down (empty)",
@@ -386,8 +386,8 @@
         "remove_whitespace":"0",
         "append":"0",
         "glue":"",
-        "prepend_crlf":"0",
-        "append_crlf":"0"
+        "prepend_crlf":"1",
+        "append_crlf":"1"
     },
     {
         "description":"Migration Properties (Radio)",
@@ -401,8 +401,8 @@
         "remove_whitespace":"0",
         "append":"1",
         "glue":"",
-        "prepend_crlf":"1",
-        "append_crlf":"0"
+        "prepend_crlf":"0",
+        "append_crlf":"1"
     },
     {
         "description":" Model Relationships | UP (empty)",

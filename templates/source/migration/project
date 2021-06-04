@@ -42,7 +42,7 @@ class MigrateVersion{{$ __globals__/PYRONOME_CURRENT_DATE}}{{$ __globals__/PYRON
 
         /* {{@snippet:begin_down_method}} */
 
-        {{MODEL_DOWN}}
+{{MODEL_DOWN}}
         {{MODEL_RELATIONS_DOWN}}
         
 		/* {{@snippet:end_down_method}} */
