@@ -15,7 +15,5 @@
         } // if (!Schema::hasTable('{{$ __value__/__lowercase_text__}}table')) {
 
         {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
-
         {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
-
         {{LARAVEL_MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}
