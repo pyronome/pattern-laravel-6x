@@ -1,3 +1,4 @@
+        /* {{@snippet:begin_{{$ __value__/__lowercase_text__}}table_migration}} */        
         if (!Schema::hasTable('{{$ __value__/__lowercase_text__}}table')) {
             Schema::create('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
                 $table->bigIncrements('id');
@@ -17,3 +18,4 @@
 {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY}}
 {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_RADIO_PROPERTY}}
 {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UP_SELECTION_PROPERTY}}
+        /* {{@snippet:end_{{$ __value__/__lowercase_text__}}table_migration}} */  

@@ -24,7 +24,7 @@ class MigrateVersion{{$ __globals__/PYRONOME_CURRENT_DATE}}{{$ __globals__/PYRON
     {
         /* {{@snippet:begin_up_method}} */
 
-        {{MODEL_UP}}
+{{MODEL_UP}}
         {{MODEL_RELATIONS_UP}}
 
         /* {{@snippet:end_up_method}} */
