@@ -124,7 +124,7 @@
         "base":"\/project",
         "enabled":"1",
         "source":"source\/migration\/project",
-        "destination":"\/source\/database\/migrations\/{{$ __globals__\/PYRONOME_CURRENT_YEAR}}_{{$ __globals__\/PYRONOME_CURRENT_MONTH}}_{{$ __globals__\/PYRONOME_CURRENT_DAY}}_000000_migrate_version{{$ __globals__\/PYRONOME_CURRENT_YEAR}}{{$ __globals__\/PYRONOME_CURRENT_MONTH}}{{$ __globals__\/PYRONOME_CURRENT_DAY}}{{$ __globals__\/PYRONOME_CURRENT_HOUR}}{{$ __globals__\/PYRONOME_CURRENT_MINUTE}}.php",
+        "destination":"\/source\/database\/migrations\/{{$ __globals__\/PYRONOME_CURRENT_YEAR}}_{{$ __globals__\/PYRONOME_CURRENT_MONTH}}_{{$ __globals__\/PYRONOME_CURRENT_DAY}}_000000_migrate_version{{$ __globals__\/PYRONOME_CURRENT_DATE}}{{$ __globals__\/PYRONOME_CURRENT_TIME}}.php",
         "temporary":"0",
         "skip_empty":"0",
         "skip_whitespace":"0",
