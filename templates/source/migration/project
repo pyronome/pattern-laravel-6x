@@ -25,35 +25,6 @@ class MigrateVersion{{$ __globals__\/PYRONOME_CURRENT_YEAR}}{{$ __globals__\/PYR
         /* {{@snippet:begin_up_method}} */
 
         {{MODEL_UP}}
-     
-        if (!Schema::hasTable('parabirimitable')) {
-            Schema::create('parabirimitable', function (Blueprint $table) {
-                $table->bigIncrements('id');
-                $table->timestamps();
-                $table->boolean('deleted')->default(0);
-                $table->smallInteger('etkin')->default(0);
-                $table->bigInteger('sira')->default(0);
-                $table->string('baslik')->nullable();
-                $table->string('isaret')->nullable();
-                $table->double('kur_bilgisi', 20, 2)->default(0.0);
-            });
-        } else {
-
-            
-
-            Schema::table('parabirimitable', function (Blueprint $table) {
-                $foreignKeys = $this->listTableForeignKeys('parabirimitable');
-
-                if (Schema::hasColumn('parabirimitable', 'baslik')) {                    
-                    if (in_array('baslik', $foreignKeys)) 
-                        $table->dropForeign('baslik');
-                    
-                    $table->string('baslik', 222)->nullable()->change();
-                }
-            });
-            
-        } // if (!Schema::hasTable('parabirimitable')) {
-
 
         {{MODEL_RELATIONS_UP}}
 
