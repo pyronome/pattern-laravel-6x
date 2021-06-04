@@ -1,0 +1,95 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+/* {{@snippet:begin_class}} */
+
+class MigrateVersion{{$ __globals__\/PYRONOME_CURRENT_YEAR}}{{$ __globals__\/PYRONOME_CURRENT_MONTH}}{{$ __globals__\/PYRONOME_CURRENT_DAY}}{{$ __globals__\/PYRONOME_CURRENT_HOUR}}{{$ __globals__\/PYRONOME_CURRENT_MINUTE}} extends Migration
+{
+
+    /* {{@snippet:begin_properties}} */
+
+    /* {{@snippet:end_properties}} */
+
+    /* {{@snippet:begin_methods}} */
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        /* {{@snippet:begin_up_method}} */
+
+        {{MODEL_UP}}
+     
+        if (!Schema::hasTable('parabirimitable')) {
+            Schema::create('parabirimitable', function (Blueprint $table) {
+                $table->bigIncrements('id');
+                $table->timestamps();
+                $table->boolean('deleted')->default(0);
+                $table->smallInteger('etkin')->default(0);
+                $table->bigInteger('sira')->default(0);
+                $table->string('baslik')->nullable();
+                $table->string('isaret')->nullable();
+                $table->double('kur_bilgisi', 20, 2)->default(0.0);
+            });
+        } else {
+
+            
+
+            Schema::table('parabirimitable', function (Blueprint $table) {
+                $foreignKeys = $this->listTableForeignKeys('parabirimitable');
+
+                if (Schema::hasColumn('parabirimitable', 'baslik')) {                    
+                    if (in_array('baslik', $foreignKeys)) 
+                        $table->dropForeign('baslik');
+                    
+                    $table->string('baslik', 222)->nullable()->change();
+                }
+            });
+            
+        } // if (!Schema::hasTable('parabirimitable')) {
+
+
+        {{MODEL_RELATIONS_UP}}
+
+        /* {{@snippet:end_up_method}} */
+    }
+
+    
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+
+        /* {{@snippet:begin_down_method}} */
+
+        {{MODEL_DOWN}}
+
+        {{MODEL_RELATIONS_DOWN}}
+        
+		/* {{@snippet:end_down_method}} */
+
+    }
+
+    public function listTableForeignKeys($table)
+    {
+        $conn = Schema::getConnection()->getDoctrineSchemaManager();
+
+        return array_map(function($key) {
+            return $key->getName();
+        }, $conn->listTableForeignKeys($table));
+    }
+
+    /* {{@snippet:end_methods}} */
+}
+
+/* {{@snippet:end_class}} */
