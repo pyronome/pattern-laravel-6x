@@ -275,7 +275,7 @@
         "enabled":"1",
         "source":"source\/migration\/file_definition",
         "destination":"MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_FILE_IMAGE_PROPERTY",
-        "temporary":"0",
+        "temporary":"1",
         "skip_empty":"1",
         "skip_whitespace":"1",
         "remove_whitespace":"0",
