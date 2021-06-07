@@ -1,113 +1,113 @@
 {{@if {{$ ../property_type/__value__}} == "Checkbox"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Date"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "DateTime"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "EmailAddress"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "HTMLEditor"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Integer"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Location"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "LongText"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Number"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Password"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "PhoneNumber"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Radio"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "ShortText"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Switch"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "Time"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@elseif {{$ ../property_type/__value__}} == "URLAddress"}}
-                    if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
-                        if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
-                            $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                            $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
-                        }
+                if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    
+                    if (in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                        $table->dropForeign('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
+                        $table->dropIndex('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign');
                     }
+                }
 {{@endif}}
