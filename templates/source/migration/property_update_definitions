@@ -68,7 +68,7 @@
                         $table->dropForeign('{{$ ../name/__value__/__lowercase_text__}}');
                     }
 
-                    $table->double('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0)->change();
+                    $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0)->change();
                 }
 {{@elseif {{$ ../property_type/__value__}} == "Password"}}
                 if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) {                    

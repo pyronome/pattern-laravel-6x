@@ -15,7 +15,7 @@
 {{@elseif {{$ ../property_type/__value__}} == "LongText"}}
                 $table->longText('{{$ ../name/__value__/__lowercase_text__}}')->nullable();
 {{@elseif {{$ ../property_type/__value__}} == "Number"}}
-                $table->double('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0);
+                $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0);
 {{@elseif {{$ ../property_type/__value__}} == "Password"}}
                 $table->longText('{{$ ../name/__value__/__lowercase_text__}}')->nullable();
 {{@elseif {{$ ../property_type/__value__}} == "PhoneNumber"}}
