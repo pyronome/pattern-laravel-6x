@@ -195,6 +195,36 @@
         "append_crlf":"0"
     },
     {
+        "description":"Migration Drop Keys (empty)",
+        "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
+        "enabled":"1",
+        "source":"",
+        "destination":"MODEL{{$ ..\/..\/__item_index__\/__value__}}_MIGRATION_DROP_KEYS",
+        "temporary":"1",
+        "skip_empty":"0",
+        "skip_whitespace":"0",
+        "remove_whitespace":"0",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"",
+        "append_crlf":""
+    },
+    {
+        "description":"Migration Drop Keys (general)",
+        "base":"\/project\/model_list\/model\/property_list\/property\/name",
+        "enabled":"1",
+        "source":"source\/migration\/property_drop_keys",
+        "destination":"MODEL{{$ ..\/..\/..\/__item_index__\/__value__}}_MIGRATION_DROP_KEYS",
+        "temporary":"1",
+        "skip_empty":"0",
+        "skip_whitespace":"0",
+        "remove_whitespace":"0",
+        "append":"1",
+        "glue":"",
+        "prepend_crlf":"1",
+        "append_crlf":"0"
+    },
+    {
         "description":"Migration Properties (empty)",
         "base":"\/project\/model_list\/model\/property_list\/__is_count_0__",
         "enabled":"1",

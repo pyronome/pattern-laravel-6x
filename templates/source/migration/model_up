@@ -9,7 +9,12 @@
         } else {
             Schema::table('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
                 $foreignKeys = $this->listTableForeignKeys('{{$ __value__/__lowercase_text__}}table');
+                Schema::disableForeignKeyConstraints();
+{{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_DROP_KEYS}}
+                Schema::enableForeignKeyConstraints();
+            });
 
+            Schema::table('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
 {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_UPDATE}}
             });
             
