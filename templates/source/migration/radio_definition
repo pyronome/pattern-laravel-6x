@@ -1,6 +1,8 @@
         if (!Schema::hasTable('{{$ ../../../name/__value__/__lowercase_text__}}table')) {
             Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
-                $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned()->change();
+                if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) { 
+                    $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned()->change();
+                }
 
                 $foreignKeys = $this->listTableForeignKeys('{{$ ../../../name/__value__/__lowercase_text__}}table');
 
