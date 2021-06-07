@@ -10,6 +10,11 @@
 {{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
         Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
             $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned()->change();
-            $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable');
+
+            $foreignKeys = $this->listTableForeignKeys('{{$ ../../../name/__value__/__lowercase_text__}}table');
+
+            if (!in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
+                $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable'); 
+            }
         });
 {{@endif}}
