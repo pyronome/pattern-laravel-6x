@@ -9,8 +9,10 @@
         }
 {{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
         Schema::table('{{$ ../../../name/__value__/__lowercase_text__}}table', function(Blueprint $table) {
-            if (!Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) { 
+            if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) { 
                 $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned()->change();
+            } else {
+                $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned();
             }
 
             $foreignKeys = $this->listTableForeignKeys('{{$ ../../../name/__value__/__lowercase_text__}}table');
