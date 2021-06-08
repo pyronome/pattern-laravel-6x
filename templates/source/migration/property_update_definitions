@@ -48,9 +48,9 @@
                 }
 {{@elseif {{$ ../property_type/__value__}} == "Number"}}
                 if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) { 
-                    $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0)->change();
+                    $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 6)->default(0.0)->change();
                 } else {
-                    $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 2)->default(0.0);
+                    $table->decimal('{{$ ../name/__value__/__lowercase_text__}}', 20, 6)->default(0.0);
                 }
 {{@elseif {{$ ../property_type/__value__}} == "Password"}}
                 if (Schema::hasColumn('{{$ ../../../name/__value__/__lowercase_text__}}table', '{{$ ../name/__value__/__lowercase_text__}}')) { 
