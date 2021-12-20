@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^6.20",
         "laravel/tinker": "^2.5",
-        "doctrine/dbal": "^2.0"
+        "doctrine/dbal": "2.*"
         *** {{@snippet:require}} ***
     },
     "require-dev": {
