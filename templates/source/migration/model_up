@@ -3,6 +3,8 @@
             Schema::create('{{$ __value__/__lowercase_text__}}table', function (Blueprint $table) {
                 $table->bigIncrements('id');
                 $table->timestamps();
+                $table->bigInteger('created_by')->default(0);
+                $table->bigInteger('updated_by')->default(0);
                 $table->boolean('deleted')->default(0);
 {{MODEL{{$ ../__item_index__/__value__}}_MIGRATION_CREATE}}
             });
