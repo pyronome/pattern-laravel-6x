@@ -53,6 +53,20 @@ class {{$ __value__}} extends Model
 			'display_property' => 'updated_at',
 			'title' => 'Updated at'
 		],
+		[
+            'name' => 'created_by',
+            'type' => 'integer',
+            'belongs_to' => '{{$ __value__}}',
+            'display_property' => 'created_by',
+            'title' => 'Created By'
+        ],
+        [
+            'name' => 'updated_by',
+            'type' => 'integer',
+            'belongs_to' => '{{$ __value__}}',
+            'display_property' => 'updated_by',
+            'title' => 'Updated By'
+        ],
 {{MODEL{{$ ../__item_index__/__value__}}_DEFINE_PROPERTY_LIST}}
 	];
 
