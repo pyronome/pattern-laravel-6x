@@ -38,6 +38,7 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         /* {{@snippet:begin_middleware_groups_array}} */
         'web' => [
+            /* {{@snippet:begin_middleware_groups_web_array}} */
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
@@ -45,6 +46,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            /* {{@snippet:end_middleware_groups_web_array}} */
         ],
 
         'api' => [
