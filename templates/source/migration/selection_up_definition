@@ -2,9 +2,9 @@
         if(! Schema::hasTable('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}')) {
             Schema::create('{{$ ../../../name/__value__/__lowercase_text__}}_{{$ ../name/__value__/__lowercase_text__}}', function (Blueprint $table) {
                 $table->bigInteger('{{$ ../../../name/__value__/__lowercase_text__}}_id')->unsigned()->default(0);
-                $table->foreign('{{$ ../../../name/__value__/__lowercase_text__}}_id')->references('id')->on('{{$ ../../../name/__value__/__lowercase_text__}}table')->onDelete('cascade');
+                /* $table->foreign('{{$ ../../../name/__value__/__lowercase_text__}}_id')->references('id')->on('{{$ ../../../name/__value__/__lowercase_text__}}table')->onDelete('cascade'); */
                 $table->bigInteger('{{$ ../name/__value__/__lowercase_text__}}')->unsigned()->default(0);
-                $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable')->onDelete('cascade');
+                /* $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable')->onDelete('cascade'); */
             });
         }
 {{@elseif {{$ ../selection_properties/property_model_multiple_selection/__value__}} == "0"}}
@@ -15,10 +15,10 @@
                 $table->unsignedBigInteger('{{$ ../name/__value__/__lowercase_text__}}')->nullable()->unsigned();
             }
 
-            $foreignKeys = $this->listTableForeignKeys('{{$ ../../../name/__value__/__lowercase_text__}}table');
+            /* $foreignKeys = $this->listTableForeignKeys('{{$ ../../../name/__value__/__lowercase_text__}}table');
 
             if (!in_array('{{$ ../../../name/__value__/__lowercase_text__}}table_{{$ ../name/__value__/__lowercase_text__}}_foreign', $foreignKeys)) {
                 $table->foreign('{{$ ../name/__value__/__lowercase_text__}}')->references('id')->on('adminltemodeloptiontable'); 
-            }
+            } */
         });
 {{@endif}}
