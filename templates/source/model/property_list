@@ -49,7 +49,7 @@
             'type' => 'selection_multiple',
 
 {{@endif}}
-            'belongs_to' => 'AdminLTEModelOption',
+            'belongs_to' => 'WisiloModelOption',
             'display_property' => 'title',
             'title' => '{{$ ../title/__value__}}'
         ]
@@ -137,7 +137,7 @@
         [
             'name' => '{{$ ../name/__value__/__lowercase_text__}}',
             'type' => 'selection_single',
-            'belongs_to' => 'AdminLTEModelOption',
+            'belongs_to' => 'WisiloModelOption',
             'display_property' => 'title',
             'title' => '{{$ ../title/__value__}}'
         ]
